@@ -54,6 +54,7 @@ ul li a {
     width: 200px;
     position: initial;
     margin-top: 10%;
+    filter: none;
   }
   article#intro div {
     position: initial;
