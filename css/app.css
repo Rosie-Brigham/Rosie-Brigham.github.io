@@ -6,6 +6,10 @@ h1 {
   font-size: 2.5rem;
 }
 
+.only-desktop {
+  display: none;
+}
+
 article#intro {
   display: flex;
   align-items: center;
@@ -37,4 +41,29 @@ ul {
 
 ul li a {
   color: #136a84;
+}
+
+/* Desktop view */
+
+@media only screen and (min-width: 480px){
+  .only-desktop {
+    display: initial;
+  }
+
+  img#me {
+    width: 200px;
+    position: initial;
+    margin-top: 10%;
+  }
+  article#intro div {
+    position: initial;
+  }
+
+  li {
+    display: inline;
+  }
+
+  span {
+    padding: 10px;
+  }
 }
