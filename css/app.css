@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  padding: 32px 0;
+  padding: 0 0 32px 0;
   margin: 0;
   border-bottom: 2px solid var(--bluetext);
 }
@@ -43,6 +43,21 @@ h6 {
   font-size: 1rem;
   color: black;
   display: inline;
+}
+
+em {
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Chivo', sans-serif;
+}
+
+img {
+  max-width: 60%;
+}
+
+figcaption {
+  font-size: 15px;
+  padding-top: 8px;
 }
 
 section.heading {
@@ -68,7 +83,8 @@ section.heading {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 80px;
+  column-gap: 2%;
+  row-gap: 0;
 }
 
 .item1 {
@@ -79,11 +95,24 @@ section.heading {
 .item1 .info-box {
   max-width: 40%;
   align-items: start;
-  padding: 24px 48px;
+  padding: 24px;
+}
+
+.item1 .info-box .index-heading {
+  padding: 0 0 1rem 0;
 }
 
 .item1 .info-box ol {
   list-style: inital;
+}
+
+.item1 .info-box ol li {
+  padding-left: 8px;
+  margin-left: 18px;
+}
+
+.item1 p:last-child {
+  padding-bottom: 0;
 }
 
 .item2 {
@@ -91,24 +120,19 @@ section.heading {
   grid-column-end: 13;
 }
 
+.item2 .info-box h3 {
+  padding: 40px 0 16px 0;
+  font-size: 24px;
+}
+
 .item2 .info-box img {
   max-width: 60%;
 }
 
-/* .item2 section.overview {
-  display: flex;
-  flex-direction: column;
+.item2 .info-box figcaption {
+  font-size: 15px;
+  padding-top: 8px;
 }
-
-.item2 section.overview div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.item2 section.overview span {
-  padding-bottom: 40px;
-} */
 
 .item2 section.overview {
   display: grid;
@@ -116,4 +140,43 @@ section.heading {
   grid-gap: 18px;
   font-size: 16px;
   padding: 1.5em;
+  padding-top: 40px;
+  font-size: 15px;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.item3 section.heading {
+  /* padding-top: 18px; */
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.item4 .info-box {
+  padding: 24px 0;
+}
+
+.item4 .info-box img {
+  max-width: 80%;
+}
+
+.item5 {
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+
+.item6 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.item7 {
+  grid-column-start: 9;
+  grid-column-end: 13;
 }
