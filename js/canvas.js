@@ -4,4 +4,11 @@ const canvas = document.createElement("canvas")
 const sandbox = new GlslCanvas(canvas)
 document.body.appendChild(canvas)
 
-sandbox.load(frag)
+width = window.innerWidth;
+
+if (width < 900) {
+  sandbox.load(mobileFrag)
+} 
+if (width > 900) {
+  sandbox.load(frag)
+} 
