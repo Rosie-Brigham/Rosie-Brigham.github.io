@@ -6,9 +6,9 @@ document.body.appendChild(canvas)
 
 width = window.innerWidth;
 
-if (width < 900) {
-  sandbox.load(mobileFrag)
-} 
-if (width > 900) {
+// if (width < 900) {
+//   sandbox.load(mobileFrag)
+// } 
+// if (width > 900) {
   sandbox.load(frag)
-} 
+// } 
